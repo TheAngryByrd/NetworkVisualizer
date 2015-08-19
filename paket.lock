@@ -8,6 +8,8 @@ NUGET
       FSharpVSPowerTools.Core (1.8.0)
     FSharpVSPowerTools.Core (1.8.0)
       FSharp.Compiler.Service (>= 0.0.87)
+    GraphSharp_Unofficial (1.0.3)
+      QuickGraph (>= 3.6.61119.7) - framework: >= net45
     MahApps.Metro (1.1.2)
     Microsoft.Bcl (1.1.10)
       Microsoft.Bcl.Build (>= 1.0.14)
@@ -19,6 +21,7 @@ NUGET
     NUnit.Runners (2.6.4)
     Octokit (0.14.0)
       Microsoft.Net.Http
+    QuickGraph (3.6.61119.7) - framework: >= net45
     SourceLink.Fake (1.0.0)
 GITHUB
   remote: fsharp/FAKE
