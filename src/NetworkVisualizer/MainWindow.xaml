@@ -2,8 +2,19 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
-        Title="MainWindow" Height="350" Width="525">
+        xmlns:model="clr-namespace:NetworkVisualizer.Model"
+        xmlns:viewModel="clr-namespace:NetworkVisualizer.ViewModel"
+        xmlns:graphSharpControls="clr-namespace:GraphSharp.Controls;assembly=GraphSharp.Controls"
+        Title="Network Visualizer" Height="350" Width="525"
+        >
+    <Window.DataContext>
+        <viewModel:MainWindowViewModel />
+    </Window.DataContext>
     <Grid>
-        
+        <model:ComputerLayout
+            Graph="{Binding Path=Graph}"
+            LayoutAlgorithmType="{Binding Path=LayoutAlgorithmType, Mode=OneWay}"
+            OverlapRemovalAlgorithmType="FSA"
+            HighlightAlgorithmType="Simple" ></model:ComputerLayout>
     </Grid>
 </metro:MetroWindow>
